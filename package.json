@@ -1,0 +1,27 @@
+{
+  "name": "celo",
+  "version": "0.0.1",
+  "description": "api to connect with celo contract",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --experimental-json-modules index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@onflow/fcl": "^1.4.1",
+    "@onflow/types": "^1.1.0",
+    "bignumber.js": "^9.1.0",
+    "elliptic": "^6.5.4",
+    "express": "^4.18.2",
+    "install": "^0.13.0",
+    "npm": "^8.19.1",
+    "sha3": "^2.1.4"
+
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}
