@@ -74,6 +74,7 @@ async function flowmint(){
   fcl.limit(9999)
 ]).then(fcl.decode)
 console.log(transactionID)
+return(transactionID)
 }
 
 
@@ -81,7 +82,7 @@ console.log(transactionID)
   app.get('/mintnft', async (req, res) => {
 
   const detailofnft= await  flowmint()
- 
+     res.send(detailofnft)
   })
 
   app.listen(process.env.PORT || PORT, () => console.log(`Example app listening at http://localhost:${PORT}`))
