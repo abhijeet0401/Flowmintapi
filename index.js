@@ -4,10 +4,6 @@ import * as types from "@onflow/types"
 import {SHA3} from 'sha3'
 import elliptic from 'elliptic';
 const ec = new elliptic.ec('secp256k1');
-
-
-
-import privateKeyToAddress from "@celo/utils/lib/address.js";
 const app = express();
 const PORT = 8080
 const PRIVATE_KEY = "0x61fedfe87fe3800a769ac9c58a668582e4681d17b0b16ef4a25abd71ce42a2d2";
